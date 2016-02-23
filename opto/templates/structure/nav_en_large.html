@@ -1,0 +1,141 @@
+{% load staticfiles %}
+<nav class="uk-navbar uk-visible-large">
+    <a href="{% url 'landing-page' %}" class="uk-navbar-brand">
+        <img src="{% static 'img/logo_opto_vecto.svg' %}" alt="LOGO OPTO Logic TECHNOLOGY SA" width="160px">
+    </a>
+    <ul class="uk-navbar-nav uk-navbar-flip">
+        <!-- Products menu -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}">
+            <!-- section products -->
+            <a href="#" class="hvr-underline-from-left">Products</a>
+            <div  class="custom-topnav uk-dropdown uk-dropdown-navbar uk-dropdown-width-3">
+                <div id="" data-uk-grid-match="{row: true}" class="uk-grid uk-dropdown-grid">
+                    <!-- Column 1 -->
+                    <div class="uk-width-1-3">
+                        <ul class="uk-nav uk-nav-dropdown">
+                            <!-- new sub -->
+                            <li style="padding:0px">
+                                <figure class="uk-overlay">
+                                    <img src="{% static 'img/bandeau-neutre.png' %}">
+                                    <figcaption class="uk-overlay-panel">
+                                        <b class="title2_topnav">Displays</b>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li><a class="hvr-underline-from-left" href="{% url 'tft_landing' %}"><p> TFT Displays</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"> <p>LCD Graphic</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"> <p>LCD Segment</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"> <p>OLED</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"> <p>ePAPER</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"> <p>CUSTOM Displays</p></a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="uk-width-1-3">
+                        <ul class="uk-nav uk-nav-dropdown">
+                            <!-- new sub -->
+                            <li style="padding:0px">
+                                <figure class="uk-overlay">
+                                    <img src="{% static 'img/bandeau-neutre.png' %}">
+                                    <figcaption class="uk-overlay-panel">
+                                        <b class="title2_topnav">Thermal Printer</b>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li><a class="hvr-underline-from-left" href="#"><p>Panel printer</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"><p>Mobile printer</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"><p>Pos printer</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"><p>Mechanism</p></a></li>
+                            <!-- new sub -->
+                            <li style="padding:0px">
+                                <figure class="uk-overlay">
+                                    <img src="{% static 'img/bandeau-neutre.png' %}">
+                                    <figcaption class="uk-overlay-panel">
+                                        <b class="title2_topnav">Touch Panels</b>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li><a class="hvr-underline-from-left" href="#"><p>PCAP</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"><p>RTP</p></a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="uk-width-1-3">
+                        <ul class="uk-nav uk-nav-dropdown">
+                            <li style="padding:0px">
+                                <figure class="uk-overlay">
+                                    <img src="{% static 'img/bandeau-neutre.png' %}">
+                                    <figcaption class="uk-overlay-panel">
+                                        <b class="title2_topnav">Computers</b>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li><a class="hvr-underline-from-left" href="#"><p>Industrial PCs</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"><p>Monitors</p></a></li>
+                            <li style="margin-bottom:35px"><a class="hvr-underline-from-left" href="#"><p>SOM</p></a></li>
+                            <!-- new sub -->
+                            <li style="padding:0px">
+                                <figure class="uk-overlay">
+                                    <img src="{% static 'img/bandeau-neutre.png' %}">
+                                    <figcaption class="uk-overlay-panel">
+                                        <b class="title2_topnav">Others</b>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li><a class="hvr-underline-from-left" href="#"><p>Laser diodes</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="#"><p>POS systems</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Solutions -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <a href="#" class="hvr-underline-from-left"> Solutions </a>
+            <div class="uk-dropdown uk-dropdown-navbar">
+              ...
+            </div>
+        </li>
+        <!-- Partners -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <a href="#" class="hvr-underline-from-left">Partners</a>
+            <div style="" class="uk-dropdown uk-dropdown-navbar">
+              ...
+            </div>
+        </li>
+        <!-- Company -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <a href="#" class="hvr-underline-from-left">Company</a>
+            <div style="" class="uk-dropdown uk-dropdown-navbar">
+                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                    <li class="uk-panel">
+                        <img src="{% static 'img/bandeau-neutre.png' %}">
+                    </li>
+                    <li><a class="hvr-underline-from-left" href="#"><p>Presentation</p></a></li>
+                    <li><a class="hvr-underline-from-left" href="#"><p>Philosophy</p></a></li>
+                    <li><a class="hvr-underline-from-left" href="#"><p>Quality management</p></a></li>
+                    <li><a class="hvr-underline-from-left" href="#"><p>Job opportunities</p></a></li>
+                </ul>
+            </div>
+        </li>
+        <!-- Support -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <a href="#" class="hvr-underline-from-left">Support</a>
+            <div style="" class="uk-dropdown uk-dropdown-navbar">
+                <ul class="uk-nav uk-nav-dropdown">
+                    <li class="">
+                        <img src="{% static 'img/bandeau-neutre.png' %}">
+                    </li>
+                    <li><a class="hvr-underline-from-left" href="#"><p>RMA</p></a></li>
+                    <li><a class="hvr-underline-from-left" href="#"><p>Terms & conditions</p></a></li>
+                    <li><a class="hvr-underline-from-left" href="#"><p>Drivers</p></a></li>
+                </ul>
+            </div>
+        </li>
+        <!-- Contact -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <a href="{% url 'contact_page' %}" class="hvr-underline-from-left">Contact</a>
+
+        </li>
+    </ul>
+</nav>

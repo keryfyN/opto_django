@@ -1,0 +1,33 @@
+{% extends "structure/_base.html" %}
+{% load staticfiles %}
+
+
+{% block slideshow %}
+        {% include "templates/frontend/_slideshow_index_en.html" %}
+{% endblock %}
+
+{% block content %}
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+                {% include "templates/frontend/_index_section_tft.html" %}
+        </div>
+
+        <div>
+                {% include "templates/frontend/_index_section_2_parallax.html" %}
+        </div>
+
+        <div id="" class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+                {% include "templates/frontend/_index_section_3.html" %}
+        </div>
+
+        {% include "templates/frontend/_index_section_4_parallax.html" %}
+
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+                {% include "templates/frontend/_index_section_5.html" %}
+        </div>
+{% endblock %}
+
+{% block script_de_fin %}
+        <script type="text/javascript" src="{% static 'js/scriptIndex.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/indexOwl.js' %}"></script>
+{% endblock %}
+

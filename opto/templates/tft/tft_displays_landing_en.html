@@ -1,0 +1,18 @@
+{% extends "structure/_base.html" %}
+{% load staticfiles %}
+{% block slideshow %}
+  {% include 'tft/_slideshow_tft.html' %}
+{% endblock %}
+
+{% block content %}
+    <!-- MARGIN DIV -->
+    <div class="uk-container uk-container-center">
+        {% include 'templates/tft/_bread_crumb.html' %}
+        {% include 'templates/tft/_main_article.html' %}
+        {% include 'templates/tft/_tft_list.html' %}
+    </div>
+{% endblock %}
+
+{% block script_de_fin %}
+{% endblock %}
+

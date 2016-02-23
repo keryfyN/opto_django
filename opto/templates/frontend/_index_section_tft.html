@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<div id="1st_section" class="section uk-grid uk-margin-large-top">
+    <div class="uk-width-medium-1-2" id="trigger1" >
+        <figure class="uk-overlay " id="imgCervin">
+            <img class="tween" src="{% static 'img/tft_cervin.png' %}">
+                <figcaption  class="uk-overlay-panel uk-flex uk-flex-center">
+                    <a><img class="" id="plus" src="{% static 'img/plus.svg' %}"></a>
+                </figcaption>
+        </figure>
+    </div>
+    <div class="uk-width-medium-1-2 ">
+        <h1 class="tween" id="titre1"><span class="titleMaj">T</span><span class="titleMaj">F</span><span class="titleMaj">T</span> Displays</h1>
+        <blockquote class="tween tween2 uk-margin-bottom ">
+            <p class="tween uk-margin-left">
+                By us every project is unique, we choose the right TFT without compromise. Our
+                plus value is a good knowledge of the Swiss market and nteger venenatis, nulla sit amet vulputate pharetra</p>
+            <small class="tween uk-margin-left uk-text-right">Raymond Wanner</small>
+        </blockquote>
+
+        <p class="tween uk-margin-bottom">
+            We can lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sodales lectus. Nam suscipit fermentum
+            neque, eget sodales tortor vulputate nec. Proin non metus consequat, vulputate orci vitae, consequat mauris.
+            Praesent sit amet interdum enim. Aenean ut neque nec lorem consectetur suscipit non vitae diam. Nunc eget
+            lorem ut nunc efficitur ultrices a at metus. Etiam vestibulum ipsum placerat diam tristique, et tincidunt
+            odio mollis. Integer id maximus velit. Integer venenatis, nulla sit amet vulputate pharetra, ante metus
+            pellentesque quam, sed bibendum massa massa sed nunc. Vivamus sit amet tellus sagittis metus ornare
+            accumsan. Cras pellentesque est elit, et efficitur tortor mollis quis. Vivamus ultrices lectus vel enim
+            eleifend, ac euismod felis vehicula. Fusce iaculis mollis dolor et viverra.
+        </p>
+
+        <p class="tween uk-margin-bottom">
+            Integer gravida lorem at nulla laoreet blandit. Vivamus fermentum nisl quis nibh aliquam condimentum.
+            Integer id scelerisque risus. In euismod ultricies elit eu feugiat. Quisque non purus luctus, elementum
+            justo sed, molestie leo. Duis aliquet purus at est euismod, sit amet facilisis lacus sagittis. Suspendisse
+            potenti. Ut sed diam tincidunt, fermentum risus sit amet, convallis justo. Nam sit amet egestas ligula.
+        </p>
+
+        <a class="tween tween2 uk-button uk-button-primary" href="{% url 'tft_landing' %}">Read more</a>
+    </div>
+</div>
