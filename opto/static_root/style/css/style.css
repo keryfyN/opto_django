@@ -357,7 +357,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 
 #products_slideshow li img{
-  max-height:50vh;
+  max-height:90vh;
   min-width: viewport;
 }
 .uk-notify {
