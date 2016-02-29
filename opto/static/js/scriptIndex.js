@@ -12,7 +12,7 @@ $(document).ready(function() {
         tl.staggerTo('.titleMaj', 0.5, {color: "#00c0b5",repeat: 1, yoyo:true},0.166667)
         tl.fromTo("#titre1", 0.8, {}, {y:10}, 1)
         tl.fromTo("#plus", 0.5, {y:20, x:50, opacity: 0, scale: 0}, {y:20, x:50, opacity: 1, scale: 1 }, 1)
-        tl.fromTo(".tween2", 0.8, {}, {x:10}, 1);
+        tl.fromTo(".tween2", 0.8, {}, {}, 1);
 
     var scene1 = new ScrollMagic.Scene({
         triggerElement: '#1st_section',
@@ -42,7 +42,7 @@ $(document).ready(function() {
         tl3.staggerTo('.titleMaj2', 0.5, {color: "#00c0b5",repeat: 1, yoyo:true},0.166667)
         tl3.fromTo("#titre2", 0.8, {}, {y:10}, 1)
         tl3.fromTo("#plus2", 1.5, {y:20, x:50, opacity: 0, scale: 0}, {y:20, x:50, opacity: 1, scale: 1 }, 1)
-        tl3.fromTo(".tween4", 0.8, {}, {x:10}, 1);
+        tl3.fromTo(".tween4", 0.8, {}, {}, 1);
 
     var scene3 = new ScrollMagic.Scene({
         triggerElement: '#3rd_section',

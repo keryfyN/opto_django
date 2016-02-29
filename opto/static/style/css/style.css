@@ -84,6 +84,16 @@ a:hover,
   width:100%;
 }
 
+.slideshow-index-panel{
+  box-sizing: border-box;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  background-color: #00c0b5;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*OVERLAY PANEL FOR DROPDOWN*/
 .uk-overlay-panel-white-txt {
@@ -352,8 +362,6 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   position:relative;
   width: 100%;
   z-index-1;
-
-
 }
 
 #products_slideshow li img{
@@ -434,6 +442,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 
 .bg-parallax-1{
+  box-sizing: border-box;
   background-image: url(../../img/test/epaper_BG.jpg);
   margin: 30 0 10 0;
   max-width: 100%;
@@ -467,14 +476,20 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 
 .uk-overlay-background-custom h1,
 h2,
+h3,
+p,
 {
+  -moz-box-sizing: border-box;
   margin: 20 20 20 20;
 }
+
 .uk-overlay-background-index-parallax
 {
+  -moz-box-sizing: border-box;
+  border: 1px solid #DDD;
   background : #00c0b5;
   border-radius: 5px;
-  padding: 10 10 10 10;
+  padding: 20px;
 }
 
 .uk-overlay-panel-slideshow-1 {
@@ -518,7 +533,6 @@ h3{
 .figcaption ,
 p,
 h3{
-  margin-left: 10px;
   opacity: 1;
 }
 .uk-overlay-panel-image-1{
@@ -710,8 +724,6 @@ min-width= 250px;
 body{
 }
 h1{
-  margin-bottom:30px;
-  max-width: 80%;
 }
 h2{
 margin-top: 30px;

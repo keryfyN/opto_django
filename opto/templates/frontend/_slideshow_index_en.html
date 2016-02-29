@@ -6,30 +6,42 @@
     <ul class="uk-slideshow" data-uk-slideshow="{kenburns:'10s', autoplay:true, autoplay_Interval: '10000'}">
         <li class="uk-panel-slide">
             <img src="{% static 'img/_slideshow/ss_pic_2.JPG' %}">
-            <div class="uk-overlay-panel uk-overlay-fade uk-flex-center uk-flex-middle uk-text-center">
-                <h2>Yolo 1</h2>
-                <p>Yolo</p>
+            <div class="uk-overlay-panel">
+                <div class="uk-flex">
+                    <div class="clearfix slideshow-index-panel">
+                        <figure class="uk-overlay uk-overlay-hover ">
+                            <img class="uk-overlay-spin" src="{% static 'img/opto_pics/filling_pic00.png' %}" alt="Image" height="200" width="300">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                                <p>Your Title Here.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </li>
         <li class="uk-panel-slide">
             <img src="{% static 'img/_slideshow/ss_pic_3.JPG' %}">
-            <div class="uk-overlay-panel uk-overlay-fade uk-flex-center uk-flex-middle uk-text-center">
-                <h2>Yolo 2</h2>
-                <p>Yolo</p>
+            <div class="uk-overlay-panel ">
+                <div class="uk-flex">
+                    <div class="clearfix slideshow-index-panel">
+                        <h2 class="">Yolo 2</h2>
+                        <p class="">Yolo</p>
+                    </div>
+                </div>
             </div>
         </li>
         <li class="uk-panel-slide">
             <img src="{% static 'img/_slideshow/ss_pic_4.JPG' %}">
-            <div class="uk-overlay-panel uk-overlay-fade uk-flex-center uk-flex-middle uk-text-center">
-                <h2>Yolo 3</h2>
-                <p>Yolo</p>
+            <div class="uk-overlay-panel">
+                <h2 class="slideshow-index-panel">Yolo 3</h2>
+                <p class="slideshow-index-panel">Yolo</p>
             </div>
         </li>
         <li class="uk-panel-slide">
             <img src="{% static 'img/_slideshow/ss_pic_5.JPG' %}">
-            <div class="uk-overlay-panel uk-overlay-fade uk-flex-center uk-flex-middle uk-text-center">
-                <h2>Yolo 4</h2>
-                <p>Yolo</p>
+            <div class="uk-overlay-panel">
+                <h2 class="slideshow-index-panel">Yolo 4</h2>
+                <p class="slideshow-index-panel">Yolo</p>
             </div>
         </li>
     </ul>
