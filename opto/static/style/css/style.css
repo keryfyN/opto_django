@@ -474,14 +474,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   border-radius: 5px;
 }
 
-.uk-overlay-background-custom h1,
-h2,
-h3,
-p,
-{
-  -moz-box-sizing: border-box;
-  margin: 20 20 20 20;
-}
+
 
 .uk-overlay-background-index-parallax
 {
