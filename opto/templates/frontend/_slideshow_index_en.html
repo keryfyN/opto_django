@@ -2,38 +2,80 @@
 <!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
 <!----------                                  SlideShow                                                      ---------->
 <!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
-<div id="products_slideshow" class=" uk-contrast">
-    <ul class="uk-slideshow " data-uk-slideshow="{kenburns:'10s', autoplay:true, autoplay_Interval: '10000'}">
-        <li class="uk-panel-slide">
-            <img src="{% static 'img/_slideshow/ss_pic_2.JPG' %}">
-            <!-- In this example the overlay panel is centered vertically and horizontally -->
-            <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <h1 class="uk-animation-scale-up">Custom Solutions</h1>
-                <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
-            </div>
-        </li>
-        <li class="uk-panel-slide">
-            <img src="{% static 'img/_slideshow/ss_pic_3.JPG' %}">
-            <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <h1 class="uk-animation-scale-up">Custom Solutions</h1>
-                <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
-            </div>
-        </li>
-        <li class="uk-panel-slide">
-            <img src="{% static 'img/_slideshow/ss_pic_4.JPG' %}">
-            <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <h1 class="uk-animation-scale-up">Custom Solutions</h1>
-                <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
-            </div>
-        </li>
-        <li class="uk-panel-slide">
-            <img src="{% static 'img/_slideshow/ss_pic_5.JPG' %}">
-            <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <h1 class="uk-animation-scale-up">Custom Solutions</h1>
-                <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
-            </div>
-        </li>
-    </ul>
-    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
-</div>
+<!--
+<div id="products_slideshow" class="" >
+    <div class="uk-slidenav-position">
+        <ul class="uk-slideshow" data-uk-slideshow="{kenburns:true, autoplay:true, autoplayInterval: '500'}" >
+            <li class="uk-panel-slide">
+                <img src="{% static 'img/_slideshow/ss_pic_2.JPG' %}">
+                <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                    <h1 class="uk-animation-scale-up">Custom Solutions</h1>
+                    <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
+                </div>
+            </li>
+            <li class="uk-panel-slide">
+                <img src="{% static 'img/_slideshow/ss_pic_3.JPG' %}">
+                <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                    <h1 class="uk-animation-scale-up">Custom Solutions</h1>
+                    <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
+                </div>
+            </li>
+            <li class="uk-panel-slide">
+                <img src="{% static 'img/_slideshow/ss_pic_4.JPG' %}">
+                <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                    <h1 class="uk-animation-scale-up">Custom Solutions</h1>
+                    <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
+                </div>
+            </li>
+            <li class="uk-panel-slide">
+                <img src="{% static 'img/_slideshow/ss_pic_5.JPG' %}">
+                <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                    <h1 class="uk-animation-scale-up">Custom Solutions</h1>
+                    <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
+                </div>
+            </li>
+        </ul>
+    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+        <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+            <li data-uk-slideshow-item="0"><a href=""></a></li>
+            <li data-uk-slideshow-item="1"><a href=""></a></li>
+            <li data-uk-slideshow-item="2"><a href=""></a></li>
+            <li data-uk-slideshow-item="3"><a href=""></a></li>
+        </ul>
+    </div>
+</div> -->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<!----------                                  SlideShow                                                      ---------->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<div id="owl-example" class="owl-carousel owl-theme">
+    <div class="item">
+        <img src="{% static 'img/_slideshow/ss_pic_2.JPG' %}">
+        <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+            <h1 class="uk-animation-scale-up">Custom Solutions</h1>
+            <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="{% static 'img/_slideshow/ss_pic_3.JPG' %}">
+        <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+            <h1 class="uk-animation-scale-up">Custom Solutions</h1>
+            <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="{% static 'img/_slideshow/ss_pic_4.JPG' %}">
+        <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+            <h1 class="uk-animation-scale-up">Custom Solutions</h1>
+            <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="{% static 'img/_slideshow/ss_pic_5.JPG' %}">
+        <div class="uk-flex-column uk-overlay-panel  uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+            <h1 class="uk-animation-scale-up">Custom Solutions</h1>
+            <p class="uk-animation-scale-up">We help you to develop your thoughts</p>
+        </div>
+    </div>
+</div> 
+

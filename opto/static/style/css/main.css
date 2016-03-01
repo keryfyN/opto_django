@@ -18,3 +18,46 @@ html, body {
 
 	font-family: Helvetica;
 }
+/*---------------------------------------------------owl customization -----------------------------------------------*/
+.owl-carousel {
+  min-width:100%;
+}
+.owl-wrapper-outer {
+  max-height: 80vh;
+}
+.owl-carousel .owl-wrapper-outer{
+  overflow:hidden;
+  position:relative;
+  width: 100%;
+  z-index-1;
+}
+#owl-example .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.owl-carousel {
+    position: relative;
+}
+.owl-controls{
+    position: absolute;
+    width: 107% !important; /* adjust if necessary */
+    top: 23% !important; /* adjust if necessary */
+    margin: 0 -3.5% !important; /* adjust if necessary */
+}
+.owl-buttons div{ /* left arrow */
+    width: 55px; /* width background image */
+    height: 0 !important;
+    padding-top: 33px !important; /* height background image */
+    overflow: hidden !important;
+    background: transparent url(../path/to/background-left-image.png) 0 0 no-repeat !important;
+    margin: 0 !important;
+    float: left;
+}
+.owl-buttons .owl-next{ /* right arrow */
+    float: right;
+    background: transparent url(../path/to/background-right-image.png) 0 0 no-repeat !important;
+}
+[data-uk-slideshow-item] {
+  cursor: pointer;
+}

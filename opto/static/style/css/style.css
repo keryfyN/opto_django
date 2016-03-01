@@ -78,6 +78,14 @@ a:hover,
 .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
   border-left: 1px solid #00c0b5;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*              slideshow container                                                                                   */
+.slideshow {
+    position: relative;
+    overflow: hidden;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*              CUSTOM-DISPLAY-PANEL-SLIDESHOW                                                                        */
 .uk-panel-slide{
