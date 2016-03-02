@@ -359,18 +359,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   min-width: viewport;
   max-height: 90vh;
 }
-.owl-carousel {
-  min-width:100%;
-}
-.owl-wrapper-outer {
-  max-height: 90vh;
-}
-.owl-carousel .owl-wrapper-outer{
-  overflow:hidden;
-  position:relative;
-  width: 100%;
-  z-index-1;
-}
+
 
 #products_slideshow li img{
   max-height:88vh;
@@ -759,10 +748,6 @@ blockquote {
 
 #section_5 {
   min-height:200px;
-}
-
-.owl-item.animated {
-    visibility: visible;
 }
 
 .ih-item.square{
