@@ -1,9 +1,9 @@
 {% load staticfiles %}
-<nav class="uk-navbar uk-visible-large">
+<div class="bg transition uk-navbar uk-visible-large">
     <a href="{% url 'landing-page' %}" class="uk-navbar-brand">
-        <img src="{% static 'img/logo_opto_vecto.svg' %}" alt="LOGO OPTO Logic TECHNOLOGY SA" width="160px">
+        <img src="{% static 'img/logo_opto_vecto_white.svg' %}" alt="LOGO OPTO Logic TECHNOLOGY SA" width="160px">
     </a>
-    <ul class="uk-navbar-nav uk-navbar-flip">
+    <ul class="uk-navbar-nav  uk-navbar-flip">
         <!-- Products menu -->
         <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}">
             <!-- section products -->
@@ -138,4 +138,4 @@
 
         </li>
     </ul>
-</nav>
+</div>

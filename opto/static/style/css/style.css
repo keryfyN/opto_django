@@ -61,7 +61,6 @@ a:hover,
 /*Customize the li and a of a dropdown*/
 .uk-nav-dropdown p {
   margin: 0 0 5 0;
-  padding:
 }
 /*customize the hover*/
 /*COLOR WHEN THE MOUSE IS OVER*/
@@ -142,18 +141,16 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 .uk-navbar {
   position: center;
-  background: #00c0b5;
-  opacity: 0.9;
+  background-color: transparent;
   color: #eeeeee;
   height:60px;
-  box-shadow: 3px 2px 5px 1px #222;
+  /*  box-shadow: 3px 2px 5px 1px #222;*/
   padding-left: 15px;
   padding-right: 15px;
 }
 .uk-navbar-nav > li > a {
   color: #f5f5f5;
   line-height: 60px;
-  opacity: 1;
   height:60px;
   font-weight: bold;
 }
@@ -348,7 +345,6 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
 }
 .uk-slideshow > .uk-active {
   z-index: 10;
@@ -753,4 +749,9 @@ blockquote {
 .ih-item.square{
   width:viewport;
   height:auto;
+}
+
+/* sticky-place-holder*/
+.uk-sticky-placeholder{
+ max-height: 0px;
 }

@@ -1,21 +1,22 @@
-/*---------------------------------------------------owl customization -----------------------------------------------*/
-/*
-/* 	Owl Carousel Owl Demo Theme
-/*	v1.23
-/*--------------------------------------------------------------------------------------------------------------------*/
-#owl-index .owl-carousel .item img{
-    display: block;
-    max-height: 100vh !important;
-}
-/*--------------------------------------------------------------------------------------------------------------------*/
-
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
+.container {
+  position: relative;
+  font-family: 'Trebuchet Ms';
 }
 
-* {
-  box-sizing: border-box;
-  &:before, &:after {
-    box-sizing: border-box;
-  }
+.bg {
+
 }
+
+/* Class .show is used in _main.js to show the bg opactity and add a border when scrolling down.*/
+.show {
+  background-color : #00c0b5;
+  box-shadow: 3px 2px 5px 1px #222;
+}
+
+.transition {    
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
