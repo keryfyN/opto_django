@@ -23,7 +23,7 @@ $(document).ready(function() {
     .addTo(controller)
     .addIndicators();
 
-    var tl2 = new TimelineMax();
+    /*var tl2 = new TimelineMax();
         tl2.fromTo(".parallax-panel", 1, {y:20, opacity: 0}, {y:20, opacity: 1});
 
     var scene2 = new ScrollMagic.Scene({
@@ -34,7 +34,7 @@ $(document).ready(function() {
     .setTween(tl2)
     .addIndicators()
     .setPin('.scene2')
-    .addTo(controller)
+    .addTo(controller) */
 
     //creating a timeline to add tweens.
     var tl3 = new TimelineMax();

@@ -21,6 +21,13 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^tft/', include('tft.urls')),
-    url(r'^contact/', include('contact.urls')),
+    url(r'^oled/', include('oled.urls')),
+    url(r'^epaper/', include('epaper.urls')),
+    url(r'^custom/', include('custom.urls')),
+    url(r'^panel_printer/', include('panel_printer.urls')),
+    url(r'^mobile_printer/', include('mobile_printer.urls')),
+    url(r'^pos_printer/', include('pos_printer.urls')),
+    url(r'^contact/', include('envelope.urls')),
     url(r'^', include('frontend.urls')),
+    url(r'^lcd/', include('lcd.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

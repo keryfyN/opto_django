@@ -1,0 +1,23 @@
+{% extends "structure/_base.html" %}
+{% load staticfiles %}
+
+{% block extraHeader %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/lcd/lcd_style.css' %}" />
+{% endblock %}
+{% block breadcrumb %}
+    {% include 'templates/lcd/segment/_lcd_segment_breadcrumbs.html' %}
+{% endblock %}
+
+{% block slideshow %}
+{% endblock %}
+
+{% block content %}
+    <!-- MARGIN DIV -->
+    <div class="uk-container uk-container-center">
+        {% include 'templates/lcd/_lcd_segment_article.html' %}
+    </div>
+{% endblock %}
+
+{% block script_de_fin %}
+{% endblock %}
+

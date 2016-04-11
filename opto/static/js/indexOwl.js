@@ -40,7 +40,12 @@
           singleItem : true,
           afterInit : progressBar,
           afterMove : moved,
-          startDragging : pauseOnDragging
+          startDragging : pauseOnDragging,
+          navigation: true,
+          navigationText: [
+            "<i class='icon-chevron-left icon-white'><</i>",
+            "<i class='icon-chevron-right icon-white'>></i>"
+          ],
         });
 
         //Init progressBar where elem is $("#owl-demo")

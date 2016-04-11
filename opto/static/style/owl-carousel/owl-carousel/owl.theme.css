@@ -21,7 +21,7 @@
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-	background: #869791;
+	background: #00c0b5;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
 }
@@ -82,7 +82,25 @@
 
 /* img size customization */
 #owl-index .item img{
-
  width:100%;
 }
 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  display: none;
+  position: absolute;
+  left:0;
+  z-index: 3;
+  top: calc(50% - 18px);
+  left: -45px;
+  top: 55px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+  top: calc(50% - 18px);
+  right: -45px;
+  top: 55px;
+}

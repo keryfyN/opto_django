@@ -1,8 +1,12 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.template import loader
+from braces.views import FormMessagesMixin
+from envelope.views import ContactView
 
-# Create your views here.
+from django.utils.translation import ugettext_lazy as _
 
-def index(request):
-    return render(request, "templates/contact/contact_en.html")
+from .forms import MyContactForm
+
+
+class MyContactView(FormMessagesMixin, ContactView):
+    form_valid_message = _(u"Thank you for your message.")
+    form_invalid_message = _(u"There was an error in the contact form.")
+    form_class = MyContactForm

@@ -1,10 +1,5 @@
 .container {
-  position: relative;
   font-family: 'Trebuchet Ms';
-}
-
-.bg {
-
 }
 
 /* Class .show is used in _main.js to show the bg opactity and add a border when scrolling down.*/
@@ -13,10 +8,12 @@
   box-shadow: 3px 2px 5px 1px #222;
 }
 
-.transition {    
+.transition {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+
+
 

@@ -1,103 +1,125 @@
 {% extends "templates/structure/_base.html" %}
 
+{% load envelope_tags %}
+
+{% load staticfiles %}
+
+{% block extraHeader %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/contact/contact_style.css' %}" />
+{% endblock %}
+
+{% block script_de_fin %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9IAmLXW5O2SAkmIL7ENw0r_tiflWo9CM&libraries=visualization&callback=initMap"
+    async defer></script>
+<script type="text/javascript" src="{% static 'js/map.js' %}"></script>
+
+{% endblock %}
+
 {% block content %}
-<div id="map">
+<div id="map" style=""></div>
     <script>
-        function initialize() {
-            // Create an array of styles.
-            var myLatLng = new google.maps.LatLng(46.523445, 6.899624);
-            var styles = [
-            {
-                stylers: [
-                        { hue: "#00c0b5" },
-                        { saturation: -20 }
-                    ]
-                },
-                {
-                    featureType: "road",
-                    elementType: "geometry",
-                    stylers: [
-                        { lightness: 100 },
-                        { visibility: "simplified" }
-                    ]
-                },
-                {
-                    featureType: "road",
-                    elementType: "labels",
-                    stylers: [
-                        { visibility: "off" }
-                    ]
-                }
-            ];
+         function initMap() {
+                            // Create an array of styles.
+                            var myLatLng = new google.maps.LatLng(46.523445, 6.899624);
+                            var styles = [
+                            {
+                                stylers: [
+                                        { hue: "#00c0b5" },
+                                        { saturation: -20 }
+                                    ]
+                                },
+                                {
+                                    featureType: "road",
+                                    elementType: "geometry",
+                                    stylers: [
+                                        { lightness: 100 },
+                                        { visibility: "simplified" }
+                                    ]
+                                },
+                                {
+                                    featureType: "road",
+                                    elementType: "labels",
+                                    stylers: [
+                                        { visibility: "off" }
+                                    ]
+                                }
+                            ];
 
 
 
-            // Create a new StyledMapType object, passing it the array of styles,
-            // as well as the name to be displayed on the map type control.
-            var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+                            // Create a new StyledMapType object, passing it the array of styles,
+                            // as well as the name to be displayed on the map type control.
+                            var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
 
-            // Create a map object, and include the MapTypeId to add
-            // to the map type control.
-            var mapOptions = {
-                zoom: 11,
-                center: new google.maps.LatLng(46.523445, 6.899624),
-                mapTypeControlOptions: {
-                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-                }
-            };
-            var map = new google.maps.Map(document.getElementById('map'),
-                mapOptions);
+                            // Create a map object, and include the MapTypeId to add
+                            // to the map type control.
+                            var mapOptions = {
+                                zoom: 11,
+                                center: new google.maps.LatLng(46.523445, 6.899624),
+                                mapTypeControlOptions: {
+                                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+                                }
+                            };
+                            var map = new google.maps.Map(document.getElementById('map'),
+                                mapOptions);
 
-            //Associate the styled map with the MapTypeId and set it to display.
-            map.mapTypes.set('map_style', styledMap);
-            map.setMapTypeId('map_style');
+                            //Associate the styled map with the MapTypeId and set it to display.
+                            map.mapTypes.set('map_style', styledMap);
+                            map.setMapTypeId('map_style');
 
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Opto Logic Technology S.A.'
-            });
+                            var marker = new google.maps.Marker({
+                                position: myLatLng,
+                                map: map,
+                                title: 'Opto Logic Technology S.A.'
+                            });
 
-            var contentString =
-            '<div id="content" class=uk-panel>'+
-                '<a id="firstHeading" class="firstHeading"><img src="{% static 'img/logo_opto_250x51.png' %}"></a>'+
-                '<div id="bodyContent">'+
-                    '<address class="" >'+
-                        '<br>'+
-                        '<div class="uk-grid">'+
-                            '<div class=uk-width-1-2>'+
-                                'Route de Vevey 105<br>'+
-                                '1618 Chatel-St-Denis<br>'+
-                                'Switzerland<br>'+
-                            '</div>'+
-                            '<div class=uk-width-1-2>'+
-                                '<a href="tel:+41219482080"><i class="uk-icon-phone"></i>  +41 21 948 20 80</a>  <br>'+
-                                '<a href="tel:+41219482088"><i class="uk-icon-fax"></i> +41 21 948 20 88</a> <br><br>'+
-                            '</div>'+
-                        '</div>'+
-                    '</address>'+
-                '</div>'+
-            '</div>';
+                            var contentString =
+                            '<div id="content" class=uk-panel >'+
+                                '<a id="firstHeading" class="firstHeading"><img src="{% static 'img/logo_opto_250x51.png' %}"></a>'+
+                                '<div id="bodyContent">'+
+                                    '<address class="" >'+
+                                        '<br>'+
+                                        '<div class="uk-grid">'+
+                                            '<div class=uk-width-1-2>'+
+                                                'Route de Vevey 105<br>'+
+                                                '1618 Chatel-St-Denis<br>'+
+                                                'Switzerland<br>'+
+                                            '</div>'+
+                                            '<div class=uk-width-1-2>'+
+                                                '<a href="tel:+41219482080"><i class="uk-icon-phone"></i>  +41 21 948 20 80</a>  <br>'+
+                                                '<a href="tel:+41219482088"><i class="uk-icon-fax"></i> +41 21 948 20 88</a> <br><br>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</address>'+
+                                '</div>'+
+                            '</div>';
 
-            var infowindow = new google.maps.InfoWindow({
-                    content: contentString,
-            });
+                            var infowindow = new google.maps.InfoWindow({
+                                    content: contentString,
+                            });
 
-            marker.addListener('click', function() {
-                infowindow.open(map, marker);
-            });
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-</div>
+                            marker.addListener('click', function() {
+                                infowindow.open(map, marker);
+                            });
+                            }
+                            google.maps.event.addDomListener(window, 'load', initMap);
+            </script>
+
 <div class="uk-container uk-container-center">
     <!-- BREAD CRUMBS -->
     <div id="goto-1st" class="uk-grid uk-margin-bottom uk-margin-top ">
-        <ul class="uk-breadcrumb">
-            <li><a href="{% url 'frontend.index' %}">Home</a></li>
-            <li class="uk-active">Contact</li>
-        </ul>
+
     </div>
+
+        <div class="uk-container uk-container-center ">
+        <div class="uk-grid">
+            {% block form %}
+                {% render_contact_form %}
+            {% endblock %}
+            <div class="g-recaptcha" data-sitekey="6LdapxsTAAAAAOCWquDtj1jLin7xC0W8ZZfEZ6xM"></div>
+        </div>
+    </div>
+
     <div class="uk-grid ">
         <div class="uk-width-1-2 uk-container-center ">
             <h1 class="">Let&prime;s talk. Or meet in person.</h1>
@@ -123,37 +145,6 @@
 
     </div>
 
-</div>
-<div style="background-color: aef3ee" class="">
-
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-                {% for message in messages %}
-                   <div class="uk-alert" data-uk-alert>
-                       <a href="" class="uk-alert-success uk-close"></a>
-                       <p>{{ message }}</p>
-                   </div>
-
-                {% endfor %}
-
-        {% endif %}
-    {% endwith %}
-
-    <div class="uk-container uk-container-center ">
-        <div class="uk-grid">
-            <form class="uk-form" method="post">
-            <fieldset data-uk-margin class="">
-                <h1 class="uk-text-center">Write to us</h1>
-                {{ form.csrf_token }}
-                {{ form.name(class='uk-form-width-large', placeholder='Insert your name.') }}
-                {{ form.subject(class='uk-form-width-large', placeholder='Insert your subject.')  }}
-                {{ form.email(class='uk-form-width-large', placeholder='Insert your email address.')  }} <br>
-                {{ form.message(class='uk-form-width-large', placeholder='Insert your message here.')  }} <br><br>
-                {{ form.submit(class="uk-button") }} <br><br>
-            </fieldset>
-            </form>
-        </div>
-    </div>
 </div>
 
 {% endblock %}

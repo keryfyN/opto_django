@@ -1,26 +1,17 @@
-$(window).scroll(function() {
-// 100 = The point you would like to fade the nav in.
+$(document).ready(function(){
 
-	if ($(window).scrollTop() > 100 ){
+    var $hoverNav = $('.bg');
 
- 		$('.bg').addClass('show uk-animation-scale-up');
+    $(window).scroll(function() {
+    // 100 = The point you would like to fade the nav in.
 
-  } else {
+        if ($(window).scrollTop() > 100 ){
+            $hoverNav.addClass('show');
+        }
+        else{
+            $hoverNav.removeClass('show');
+        }
+    });
+});//*end of document.ready*/
 
-    $('.bg').removeClass('show');
 
- 	};
-});
-
-$('.scroll').on('click', function(e){
-		e.preventDefault()
-
-  $('html, body').animate({
-      scrollTop : $(this.hash).offset().top
-    }, 1500);
-});
-
-$('.bg').hover(
-       function(){ $(this).addClass('show') },
-       function(){ $(this).removeClass('uk-fadeOut show ') }
-)

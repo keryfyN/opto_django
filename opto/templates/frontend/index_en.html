@@ -1,12 +1,18 @@
 {% extends "structure/_base.html" %}
 {% load staticfiles %}
 
+{% block extraHeader %}
+        <link rel="stylesheet" type="text/css" href="{% static 'style/css/index_style.css' %}" />
+{% endblock %}
+
+
 
 {% block slideshow %}
         {% include "templates/frontend/_slideshow_index_en.html" %}
 {% endblock %}
 
 {% block content %}
+
         <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
                 {% include "templates/frontend/_index_section_tft.html" %}
         </div>

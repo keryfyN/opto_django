@@ -3,7 +3,7 @@
     <a href="{% url 'landing-page' %}" class="uk-navbar-brand">
         <img src="{% static 'img/logo_opto_vecto_white.svg' %}" alt="LOGO OPTO Logic TECHNOLOGY SA" width="160px">
     </a>
-    <ul class="uk-navbar-nav  uk-navbar-flip">
+    <ul class="uk-navbar-nav uk-navbar-flip">
         <!-- Products menu -->
         <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}">
             <!-- section products -->
@@ -23,11 +23,11 @@
                                 </figure>
                             </li>
                             <li><a class="hvr-underline-from-left" href="{% url 'tft_landing' %}"><p> TFT Displays</p></a></li>
-                            <li><a class="hvr-underline-from-left" href="#"> <p>LCD Graphic</p></a></li>
-                            <li><a class="hvr-underline-from-left" href="#"> <p>LCD Segment</p></a></li>
-                            <li><a class="hvr-underline-from-left" href="#"> <p>OLED</p></a></li>
-                            <li><a class="hvr-underline-from-left" href="#"> <p>ePAPER</p></a></li>
-                            <li><a class="hvr-underline-from-left" href="#"> <p>CUSTOM Displays</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="{% url 'lcd_graphic' %}"> <p>LCD Graphic</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="{% url 'lcd_segment' %}"> <p>LCD Segment</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="{% url 'oled_landing' %}"> <p>OLED</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="{% url 'epaper_landing' %}"> <p>ePAPER</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="{% url 'custom_landing' %}"> <p>CUSTOM Displays</p></a></li>
                         </ul>
                     </div>
                     <!-- Column 2 -->
@@ -42,9 +42,9 @@
                                     </figcaption>
                                 </figure>
                             </li>
-                            <li><a class="hvr-underline-from-left" href="#"><p>Panel printer</p></a></li>
-                            <li><a class="hvr-underline-from-left" href="#"><p>Mobile printer</p></a></li>
-                            <li><a class="hvr-underline-from-left" href="#"><p>Pos printer</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="{% url 'panel_printer_landing' %}"><p>Panel printer</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="{% url 'mobile_printer_landing' %}"><p>Mobile printer</p></a></li>
+                            <li><a class="hvr-underline-from-left" href="{% url 'pos_printer_landing' %}"><p>Pos printer</p></a></li>
                             <li><a class="hvr-underline-from-left" href="#"><p>Mechanism</p></a></li>
                             <!-- new sub -->
                             <li style="padding:0px">
@@ -134,7 +134,7 @@
         </li>
         <!-- Contact -->
         <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
-            <a href="{% url 'contact_page' %}" class="hvr-underline-from-left">Contact</a>
+            <a href="{% url 'envelope-contact' %}" class="hvr-underline-from-left">Contact</a>
 
         </li>
     </ul>

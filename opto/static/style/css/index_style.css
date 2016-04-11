@@ -1,0 +1,8 @@
+/* sticky-place-holder*/
+.uk-sticky-placeholder{
+    max-height: 0px;
+}
+
+div .uk-navbar:hover{
+    background-color: #00c0b5;
+}

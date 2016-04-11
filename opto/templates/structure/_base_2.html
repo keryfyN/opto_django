@@ -1,0 +1,83 @@
+<html content="width=device-width, initial-scale=1" lang="en">
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+      <title>{{title}}</title>
+    {% else %}
+      <title>OPTO Logic TECHNOLOGY S.A.</title>
+    {% endif %}
+    {% load staticfiles %}
+
+    <!-- Latest compiled and minimized CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style/uikit-2.25.0/css/uikit.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/animation.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/main.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/animate.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/uikit-2.25.0/css/components/dotnav.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/uikit-2.25.0/css/components/slidenav.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/hover-master/css/hover.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/owl-carousel/owl-carousel/owl.carousel.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/owl-carousel/owl-carousel/owl.theme.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/owl-carousel/owl-carousel/owl.transitions.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/iHover/ihover.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/slideshow_style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/DataTables-1.10.10/media/css/jquery.dataTables.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/W3.css' %}" />
+    {% block extraHeader %}{% endblock %}
+
+    <script>
+      function initialize() {}
+    </script>
+  </head>
+  <body>
+
+    <div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">
+      {% include 'templates/structure/nav_en_large.html' %}
+      {% include 'templates/structure/nav_en_small.html' %}
+    </div>
+
+    <div class="uk-notify uk-notify-bottom-right">
+        <div class="uk-align-right" data-uk-scrollspy="{cls:'uk-animation-fade', repeat:true}">
+          <a href="#top" class="uk-icon-chevron-up uk-icon-large" data-uk-smooth-scroll></a>
+        </div>
+    </div>
+
+    {% block slideshow %}{% endblock %}
+    <div id="goto-1st" class="bc-margin uk-container uk-container-center uk-grid">
+
+    </div>
+
+    {% block content %}{% endblock %}
+    {% include 'templates/structure/footer_en.html' %}
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'style/ScrollMagic205/js/lib/greensock/TweenMax.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/ScrollMagic205/js/lib/greensock/TimelineMax.min.js' %}"></script>
+  	<script type="text/javascript" src="{% static 'style/scrollmagic205/scrollmagic/uncompressed/ScrollMagic.js' %}"></script>
+  	<script type="text/javascript" src="{% static 'style/ScrollMagic205/scrollmagic/uncompressed/plugins/animation.gsap.js' %}"></script>
+  	<script type="text/javascript" src="{% static 'style/ScrollMagic205/scrollmagic/uncompressed/plugins/debug.addIndicators.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/_main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/uikit-2.25.0/js/uikit.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/css/wow-master/dist/wow.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/uikit-2.25.0/js/components/slideshow.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/uikit-2.25.0/js/components/slideshow-fx.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/uikit-2.25.0/js/components/sticky.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/uikit-2.25.0/js/components/slideset.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/uikit-2.25.0/js/components/slider.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/uikit-2.25.0/js/core/smooth-scroll.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/uikit-2.25.0/js/components/parallax.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/uikit-2.25.0/js/components/notify.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/owl-carousel/owl-carousel/owl.carousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style/DataTables-1.10.10/media/js/jquery.dataTables.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dataTables.js' %}"></script>
+
+
+
+
+
+  {% block script_de_fin %}{% endblock %}
+
+  </body>
+</html>

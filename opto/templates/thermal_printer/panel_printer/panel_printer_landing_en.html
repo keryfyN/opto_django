@@ -1,0 +1,27 @@
+{% extends "structure/_base.html" %}
+{% load staticfiles %}
+
+{% block extraHeader %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/epaper/epaper_style.css' %}" />
+{% endblock %}
+
+{% block slideshow %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+    {% include 'templates/thermal_printer/panel_printer/_panel_printer_breadcrumbs.html' %}
+{% endblock %}
+
+{% block content %}
+    <!-- MARGIN DIV -->
+    <div class="uk-container uk-container-center">
+
+        {% include 'templates/thermal_printer/panel_printer/_panel_printer_main_article.html' %}
+        {% include 'templates/thermal_printer/panel_printer/_panel_printer_list.html' %}
+    </div>
+{% endblock %}
+
+{% block script_de_fin %}
+{% endblock %}
+

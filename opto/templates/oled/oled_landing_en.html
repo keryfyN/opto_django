@@ -1,0 +1,27 @@
+{% extends "structure/_base.html" %}
+{% load staticfiles %}
+
+{% block extraHeader %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/tft/tft_style.css' %}" />
+{% endblock %}
+
+{% block slideshow %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+    {% include 'templates/oled/_oled_breadcrumbs.html' %}
+{% endblock %}
+
+{% block content %}
+    <!-- MARGIN DIV -->
+    <div class="uk-container uk-container-center">
+
+        {% include 'templates/oled/_oled_main_article.html' %}
+        {% include 'templates/oled/_oled_list.html' %}
+    </div>
+{% endblock %}
+
+{% block script_de_fin %}
+{% endblock %}
+

@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.template import loader
 from datetime import datetime
 
+
 # Create your views here.
 
 

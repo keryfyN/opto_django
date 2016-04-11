@@ -1,9 +1,9 @@
 {% load staticfiles %}
-<nav class="uk-navbar   uk-hidden-large">
+<nav class="bg transition uk-navbar   uk-hidden-large">
     <a href="{% url 'landing-page' %}" class="uk-navbar-brand">
-      <img src="{% static 'img/logo_opto_vecto.svg' %}" alt="OPTO Logic TECHNOLOGY SA" width="160px">
+      <img src="{% static 'img/logo_opto_vecto_white.svg' %}" alt="OPTO Logic TECHNOLOGY SA" width="160px">
     </a>
-    <div class="uk-navbar-flip uk-navbar-toggle uk-contrast " data-uk-offcanvas="{target:'#offcanvas-4'}"></div>
+    <div class="uk-navbar-flip uk-navbar-toggle uk-contrast" data-uk-offcanvas="{target:'#offcanvas-4'}"></div>
     <!-- ================================================================================================================== -->
     <div aria-hidden="true" id="offcanvas-4" class="uk-offcanvas">
         <div class="uk-offcanvas-bar uk-offcanvas-bar-flip uk-text-small">
@@ -17,11 +17,11 @@
                             <a href="#" class="uk-margin-left">Displays</a>
                             <ul class="uk-text-small uk-margin-large-left">
                                 <li><a href="{% url 'tft_landing' %}" ><p> TFT Displays</p></a></li>
-                                <li><a href="#"> <p>LCD Graphic</p></a></li>
-                                <li><a href="#"> <p>LCD Segment</p></a></li>
-                                <li><a href="#"> <p>OLED</p></a></li>
-                                <li><a href="#"> <p>ePAPER</p></a></li>
-                                <li><a href="#"> <p>CUSTOM Displays</p></a></li>
+                                <li><a href="{% url 'lcd_graphic' %}"> <p>LCD Graphic</p></a></li>
+                                <li><a href="{% url 'lcd_segment' %}"> <p>LCD Segment</p></a></li>
+                                <li><a href="{% url 'oled_landing' %}"> <p>OLED</p></a></li>
+                                <li><a href="{% url 'epaper_landing' %}"> <p><e></e>PAPER</p></a></li>
+                                <li><a href="{% url 'custom_landing' %}"> <p>CUSTOM Displays</p></a></li>
                             </ul>
                         </li>
                         <!---- New product line ---->
@@ -36,9 +36,9 @@
                         <li aria-expanded="false" class="uk-parent">
                             <a href="#" class="uk-text-small uk-margin-left">Thermal Printers</a>
                             <ul class="uk-text-small uk-margin-large-left">
-                                <li><a href="#"><p>Panel printer</p></a></li>
-                                <li><a href="#"><p>Mobile printer</p></a></li>
-                                <li><a href="#"><p>Pos printer</p></a></li>
+                                <li><a href="{% url 'panel_printer_landing' %}"><p>Panel printer</p></a></li>
+                                <li><a href="{% url 'mobile_printer_landing' %}"><p>Mobile printer</p></a></li>
+                                <li><a href="{% url 'pos_printer_landing' %}"><p>Pos printer</p></a></li>
                                 <li><a href="#"><p>Mechanism</p></a></li>
                             </ul>
                         </li>
@@ -98,7 +98,7 @@
             <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
                 <!-- section Contact -->
                 <li aria-expanded="false" class="uk-parent">
-                    <a href="#" class="uk-icon-envelope-o uk-icon-float-right uk-text-small">Contact</a>
+                    <a href="{% url 'envelope-contact' %}" class="uk-icon-envelope-o uk-icon-float-right uk-text-small">Contact</a>
                     <ul class="uk-text-small">
                     </ul>
                 </li>

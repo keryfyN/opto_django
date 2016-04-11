@@ -1,0 +1,27 @@
+{% extends "structure/_base.html" %}
+{% load staticfiles %}
+
+{% block extraHeader %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/custom/custom_style.css' %}" />
+{% endblock %}
+
+{% block slideshow %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+    {% include 'templates/custom/_custom_breadcrumbs.html' %}
+{% endblock %}
+
+{% block content %}
+    <!-- MARGIN DIV -->
+    <div class="uk-container uk-container-center">
+
+        {% include 'templates/custom/_custom_main_article.html' %}
+        {% include 'templates/custom/_custom_list.html' %}
+    </div>
+{% endblock %}
+
+{% block script_de_fin %}
+{% endblock %}
+

@@ -11,6 +11,7 @@
     <!-- Latest compiled and minimized CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'style/uikit-2.25.0/css/uikit.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'style/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/animation.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'style/css/main.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'style/css/animate.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'style/uikit-2.25.0/css/components/dotnav.css' %}" />
@@ -22,11 +23,13 @@
     <link rel="stylesheet" type="text/css" href="{% static 'style/css/iHover/ihover.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'style/css/slideshow_style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'style/DataTables-1.10.10/media/css/jquery.dataTables.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'style/css/W3.css' %}" />
+    {% block extraHeader %}{% endblock %}
 
     <script>
       function initialize() {}
     </script>
-    </head>
+  </head>
   <body>
 
     <div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">
@@ -39,7 +42,15 @@
           <a href="#top" class="uk-icon-chevron-up uk-icon-large" data-uk-smooth-scroll></a>
         </div>
     </div>
+
     {% block slideshow %}{% endblock %}
+    <div id="goto-1st" class="bc-margin uk-container uk-container-center uk-grid">
+      <ul class="uk-breadcrumb">
+        <li><a href="{% url 'landing-page' %}">Home</a></li>
+        {% block breadcrumb %}{% endblock %}
+      </ul>
+    </div>
+
     {% block content %}{% endblock %}
     {% include 'templates/structure/footer_en.html' %}
 
@@ -64,8 +75,9 @@
     <script type="text/javascript" src="{% static 'style/owl-carousel/owl-carousel/owl.carousel.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'style/DataTables-1.10.10/media/js/jquery.dataTables.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/dataTables.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/topnavTween.js' %}"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
+
+
+
 
 
   {% block script_de_fin %}{% endblock %}

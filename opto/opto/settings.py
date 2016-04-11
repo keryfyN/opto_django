@@ -35,7 +35,13 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'frontend.apps.FrontendConfig',
     'tft.apps.TftConfig',
-    'contact.apps.ContactConfig',
+    'oled.apps.OledConfig',
+    'epaper.apps.EpaperConfig',
+    'lcd.apps.LcdConfig',
+    'panel_printer.apps.PanelPrinterConfig',
+    'mobile_printer.apps.MobilePrinterConfig',
+    'pos_printer.apps.PosPrinterConfig',
+    'custom.apps.CustomConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +49,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'envelope',
+    'crispy_forms',
+    'braces',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -131,6 +140,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'), )
+
+
+# django-registration
+ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
 
 
 
